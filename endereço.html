@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Endereço</title>
+
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        form {
+            display: grid;
+            gap: 10px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-top: 4px;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Formulário de Endereço</h1>
+        <form id="addressForm">
+            <label for="street">Rua:</label>
+            <input type="text" id="street" name="street" required>
+
+            <label for="city">Cidade:</label>
+            <input type="text" id="city" name="city" required>
+
+            <label for="state">Estado:</label>
+            <input type="text" id="state" name="state" required>
+
+            <label for="zip">CEP:</label>
+            <input type="text" id="zip" name="zip" required>
+
+            <button type="button" onclick="displayAddress()">Enviar</button>
+        </form>
+
+        <div id="result"></div>
+    </div>
+
+    <script>
+        function displayAddress() {
+            var street = document.getElementById("street").value;
+            var city = document.getElementById("city").value;
+            var state = document.getElementById("state").value;
+            var zip = document.getElementById("zip").value;
+
+            // Verificar se algum campo está vazio
+            if (street === '' || city === '' || state === '' || zip === '') {
+                alert('Por favor, preencha todos os campos antes de enviar.');
+                return;
+            }
+
+            var address = `Rua: ${street}<br>Cidade: ${city}<br>Estado: ${state}<br>CEP: ${zip}`;
+
+            document.getElementById("result").innerHTML = address;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aluguel de Ferramentas</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #2ecc71;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        #ferramentas {
+            background-color: #ecf0f1;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .ferramenta {
+            background-color: #fff;
+            border: 1px solid #dcdcdc;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+
+        .btn-alugar {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        #contato {
+            background-color: #ecf0f1;
+            padding: 20px;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Aluguel de Ferramentas</h1>
+        <nav>
+            <ul>
+                <li><a>Ferramentas</a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="ferramentas">
+            <h2>Ferramentas Disponíveis</h2>
+            <div class="ferramentas-container">
+                <div class="ferramenta">
+                    <img src="https://www.dutramaquinas.com.br/view/img/produtos/alta/415835_compactador_de_solo_tipo_sapo_a_gasolina_330_x_285_mm_4_hp_4_tempos_ram_75m.jpg" alt="compactador_de_solo_tipo_sapo_a_gasolina_330_x_285_mm_4_hp_4_tempos_ram_75m.jpg" width="200">
+                    <h3>Ferramenta 1</h3>
+                    <p>Descrição da ferramenta 1</p>
+                    <p>Compactador de solo tipo sapo a gasolina, 330x285mm, 4hp, 4 tempos</p> 
+                    <a href="file:///C:/Users/55989/Desktop/teste/uni.html" class="btn-alugar">Alugar</a>
+                </div>
+                <div class="ferramenta">
+                    <img src="https://madmais.vteximg.com.br/arquivos/ids/156320-1000-1000/PARAFUSADEIRA-FURADEIRA-STANLEY-12V-BIVOLT-COM-MALETA-E-2-BATERIA-SCD12S2K.jpg?v=637272168435300000" alt="PARAFUSADEIRA-FURADEIRA-STANLEY-12V-BIVOLT-COM-MALETA-E-2-BATERIA-SCD12S2K" width="190">
+                    <h3>Ferramenta 2</h3>
+                    <p>Descrição da ferramenta 2</p>
+                    <p>PARAFUSADEIRA-FURADEIRA-STANLEY-<br>12V-BIVOLT-COM-MALETA-E-2-BATERIA-SCD12S2K</p>
+                    <a href="file:///C:/Users/55989/Desktop/teste/uni.html" class="btn-alugar">Alugar</a>
+                </div>
+                <div class="ferramenta">
+                    <img src="https://loclav.com.br/wp-content/uploads/2020/12/Betoneira.jpg" alt="Betoneira" width="200">
+                    <h3>Ferramenta 3</h3>
+                    <p>Descrição da ferramenta 3</p>
+                    <a href="file:///C:/Users/55989/Desktop/teste/uni.html" class="btn-alugar">Alugar</a>
+            </div>
+			    <div class="ferramenta">
+                    <img src="https://antferramentas.vtexassets.com/arquivos/ids/176946/Martelo-Demolidor-1750W-Bosch-GSH-16-28-ANT-Ferramentas.jpg?v=637838310804430000" alt="/Martelo-Demolidor-1750W-Bosch-GSH-16-28-ANT-Ferramentas" width="200">
+                    <h3>Ferramenta 4</h3>
+                    <p>Descrição da ferramenta 4</p>
+					<p>Martelo-Demolidor-1750W-Bosch-GSH-16-28</p>
+                    <a href="file:///C:/Users/55989/Desktop/teste/uni.html" class="btn-alugar">Alugar</a>
+            </div>
+			    <div class="ferramenta">
+                    <img src="https://72380.cdn.simplo7.net/static/72380/sku/eletricas-martelos-e-marteletes-serra-corte-rapido-policorte-14-pol-220v-2300w-d28730-dewalt-1670836763832.jpg" alt="policorte-14-pol-220v-2300w-d28730-dewalt-1670836763832" width="200">
+                    <h3>Ferramenta 5</h3>
+                    <p>Descrição da ferramenta 5</p>
+					<p>SERRA CORTE RAPIDO POLICORTE 14 POL 220V 2300W D28730 DEWALT</p>
+                    <a href="file:///C:/Users/55989/Desktop/teste/uni.html" class="btn-alugar">Alugar</a>
+            </div>
+			    <div class="ferramenta">
+                    <img src="https://img.lojadomecanico.com.br/IMAGENS/21/154/156127/1610551614306.JPG" alt="IMAGENS/21/154/156127/1610551614306" width="200">
+                    <h3>Ferramenta 6</h3>
+                    <p>Descrição da ferramenta 6</p>
+					<p>Máquina Inversora de Solda LHN 202I 10kVA 60HZ 220V. - ESAB-742913</p>
+                    <a href="file:///C:/Users/55989/Desktop/teste/uni.html" class="btn-alugar">Alugar</a>
+            </div>
+			    <div class="ferramenta">
+                    <img src="https://img.lojadomecanico.com.br/IMAGENS/46/448/186480/1626814120340.JPG" alt="IMAGENS/46/448/186480/1626814120340" width="200">
+                    <h3>Ferramenta 7</h3>
+                    <p>Descrição da ferramenta 7</p>
+					<p>Motosserra Elétrica 1600W com Sabre Oregon 16Pol. - FORTGPRO-FG9141</p>
+                    <a href="file:///C:/Users/55989/Desktop/teste/uni.html" class="btn-alugar">Alugar</a>
+            </div>
+			    <div class="ferramenta">
+                    <img src="https://img.lojadomecanico.com.br/IMAGENS/21/224/403775/1670251908533.JPG" alt="IMAGENS/21/224/403775/1670251908533" width="200">
+                    <h3>Ferramenta 8</h3>
+                    <p>Descrição da ferramenta 8 </p>
+					<p>Serra Circular de Bancada 10 Pol. 1800W - FORTGPRO-FG3002X</p>
+                    <a href="file:///C:/Users/55989/Desktop/teste/uni.html" class="btn-alugar">Alugar</a>
+            </div>
+			    <div class="ferramenta">
+                    <img src="https://img.lojadomecanico.com.br/IMAGENS/33/781/99853/Rocadeira-Multifuncional-2T-43CC-2HP-a-G-fortgpro-fg91301.JPG" alt="Rocadeira-Multifuncional-2T-43CC-2HP-a-G-fortgpro-fg91301" width="200">
+                    <h3>Ferramenta 9</h3>
+                    <p>Descrição da ferramenta 9</p>
+					<p>Roçadeira Multifuncional a Gasolina 2T 43CC 2HP - FORTGPRO-FG9130</p>
+                    <a href="file:///C:/Users/55989/Desktop/teste/uni.html" class="btn-alugar">Alugar</a>
+            </div>
+			    <div class="ferramenta">
+                    <img src="https://img.lojadomecanico.com.br/IMAGENS/21/221/105956/1655144719027.JPG" alt="IMAGENS/21/221/105956/1655144719027" width="200">
+                    <h3>Ferramenta 10</h3>
+                    <p>Descrição da ferramenta 10</p>
+					<p>Furadeira de Bancada 5/8Pol. 3/4HP 550W Bivolt - FORTGPRO-FG010</p>
+                    <a href="file:///C:/Users/55989/Desktop/teste/uni.html" class="btn-alugar">Alugar</a>
+            </div>
+        </section>
+        <section 
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Aluguel de Ferramentas.</p> 
+    </footer>
+</body>
+</html>
